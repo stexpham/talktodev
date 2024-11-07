@@ -14,9 +14,9 @@
 </p>
 
 <p align="center">
-   <a href="https://github.com/piotrkulpinski/devsuite/stargazers"><img src="https://img.shields.io/github/stars/piotrkulpinski/devsuite" alt="Github Stars"></a>
-   <a href="https://github.com/piotrkulpinski/devsuite/blob/main/LICENSE"><img src="https://img.shields.io/github/license/piotrkulpinski/devsuite" alt="License"></a>
-   <a href="https://github.com/piotrkulpinski/devsuite/pulse"><img src="https://img.shields.io/github/commit-activity/m/piotrkulpinski/devsuite" alt="Commits-per-month"></a>
+   <a href="https://github.com/piotrkulpinski/devsuite/stargazers"><img src="https://img.shields.io/github/stars/stexpham/talktodev" alt="Github Stars"></a>
+   <a href="https://github.com/piotrkulpinski/devsuite/blob/main/LICENSE"><img src="https://img.shields.io/github/license/stexpham/talktodev" alt="License"></a>
+   <a href="https://github.com/piotrkulpinski/devsuite/pulse"><img src="https://img.shields.io/github/commit-activity/m/stexpham/talktodev" alt="Commits-per-month"></a>
    <a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/piotrkulpinski/devsuite">
    <img alt="open in devcontainer" src="https://img.shields.io/static/v1?label=Dev%20Containers&message=Enabled&color=blue&logo=visualstudiocode" />
    </a>
