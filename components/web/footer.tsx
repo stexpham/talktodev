@@ -120,14 +120,14 @@ export const Footer = ({ children, className, ...props }: HTMLAttributes<HTMLEle
         >
           <img
             src="/_static/authors/piotrkulpinski.webp"
-            alt="Piotr Kulpinski"
+            alt="Stepham"
             loading="lazy"
             width="16"
             height="16"
             decoding="async"
             className="max-sm:hidden size-4 rounded-full"
           />
-          Made by Piotr Kulpinski
+          Made by Stepham
         </NavigationLink>
 
         <p className="text-xs text-foreground/50">This website may contain affiliate links</p>
