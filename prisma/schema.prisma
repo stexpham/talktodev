@@ -1,0 +1,88 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DATABASE_URL_UNPOOLED")
+  extensions = [citext]
+}
+
+model Tool {
+  id             String    @id @default(cuid())
+  name           String    @db.Citext
+  slug           String    @unique
+  tagline        String?
+  description    String?
+  content        String?
+  websiteUrl     String    @unique
+  affiliateUrl   String?
+  faviconUrl     String?
+  screenshotUrl  String?
+  pricing        String?
+  socials        Json?
+  isFeatured     Boolean   @default(false)
+  xHandle        String?
+  submitterName  String?
+  submitterEmail String?
+  publishedAt    DateTime?
+  updatedAt      DateTime  @updatedAt
+  createdAt      DateTime  @default(now())
+
+  // Relations
+  categories  Category[]
+  collections Collection[]
+  tags        Tag[]
+
+  // Indexes
+  @@index([id, slug])
+  @@index([name])
+  @@index([description])
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String   @db.Citext
+  label       String?  @db.Citext
+  slug        String   @unique
+  description String?
+  updatedAt   DateTime @updatedAt
+  createdAt   DateTime @default(now())
+
+  // Relations
+  tools Tool[]
+
+  // Indexes
+  @@index([name])
+}
+
+model Collection {
+  id          String   @id @default(cuid())
+  name        String   @db.Citext
+  slug        String   @unique
+  description String?
+  updatedAt   DateTime @updatedAt
+  createdAt   DateTime @default(now())
+
+  // Relations
+  tools Tool[]
+
+  // Indexes
+  @@index([name])
+}
+
+model Tag {
+  id        String   @id @default(cuid())
+  name      String   @db.Citext
+  slug      String   @unique
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+
+  // Relations
+  tools Tool[]
+
+  // Indexes
+  @@index([name])
+}
