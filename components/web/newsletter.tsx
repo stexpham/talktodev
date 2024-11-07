@@ -19,7 +19,7 @@ export const Newsletter = ({ className, title, description, ...props }: Newslett
           {description && <p className="text-foreground/50 text-pretty">{description}</p>}
 
           <NewsletterForm
-            buttonProps={{ children: "Join TalktoDev" }}
+            buttonProps={{ children: "Join DevSuite" }}
             medium="cta_form"
             className="max-w-xs"
           />

@@ -8,14 +8,14 @@ export const linksConfig = {
   producthunt: "https://www.producthunt.com/posts/devsuite",
   family: [
     {
-      title: "OpenAlternative",
-      href: "https://openalternative.co",
-      description: "Open Source Alternatives to Popular Software",
+      title: "Stepham",
+      href: "https://stepham.com",
+      description: "Personal Website",
     },
     {
-      title: "Superstash",
-      href: "https://superstash.co",
-      description: "No-code directory website builder",
+      title: "xuantiep",
+      href: "https://xuantiep.com",
+      description: "Developer website in developmemt",
     },
     {
       title: "Chipmunk Theme",
