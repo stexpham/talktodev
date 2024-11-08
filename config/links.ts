@@ -2,20 +2,20 @@ import { env } from "~/env"
 
 export const linksConfig = {
   feed: `${env.NEXT_PUBLIC_SITE_URL}/rss.xml`,
-  author: "https://stepham.com",
+  author: "https://kulpinski.pl",
   twitter: "https://x.com/devsuiteco",
   github: "https://github.com/piotrkulpinski/devsuite",
   producthunt: "https://www.producthunt.com/posts/devsuite",
   family: [
     {
-      title: "Stepham",
-      href: "https://stepham.com",
-      description: "Personal Website",
+      title: "OpenAlternative",
+      href: "https://openalternative.co",
+      description: "Open Source Alternatives to Popular Software",
     },
     {
-      title: "xuantiep",
-      href: "https://xuantiep.com",
-      description: "Developer website in developmemt",
+      title: "Superstash",
+      href: "https://superstash.co",
+      description: "No-code directory website builder",
     },
     {
       title: "Chipmunk Theme",
